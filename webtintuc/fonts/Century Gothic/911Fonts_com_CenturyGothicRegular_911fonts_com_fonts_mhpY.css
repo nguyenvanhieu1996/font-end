@@ -1,0 +1,9 @@
+@font-face {
+    font-family: '911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY';
+    src: url('fonts/911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY.eot');
+    src: url('fonts/911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY.eot') format('embedded-opentype'),
+         url('fonts/911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY.woff2') format('woff2'),
+         url('fonts/911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY.woff') format('woff'),
+         url('fonts/911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY.ttf') format('truetype'),
+         url('fonts/911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY.svg#911Fonts_com_CenturyGothicRegular_911fonts_com_fonts_mhpY') format('svg');
+}
