@@ -11,7 +11,7 @@ a,a:focus,a:hover {
     text-decoration: none;
 }
 h3,h2{margin:0;padding:0}
-th{text-align:center;padding:10px}
+
 :focus{outline:none !important} // bo di border cua text
 body,p {
     margin: 0px;
@@ -41,10 +41,9 @@ header{
         color: #fff;
         padding-top: 5px;
      //   padding-bottom: 10px;
+     width: 100%;
     }
-    .header-top{
-        width: 100%;
-       
+    .header-top{ 
       //  border: 1px solid red;
            // top:0;
             //z-index:99999;
@@ -59,21 +58,18 @@ header{
                 float: left;
                 font-size: 15px;  
               //  padding-bottom: 10px;
-                line-height: 2.5; 
+                line-height: 2.5;  // chu y
              //   margin-top: 16px;
              //  padding-top: 16px;
             //   padding-bottom: 10px;
                 padding-left: 30px;  
-                &:nth-child(1){
-                    
+                &:nth-child(1){  
                     background: url("../images/img_social/270848539755393.png") no-repeat;                      
                 }
-                &:nth-child(2){
-                   
+                &:nth-child(2){     
                     background: url("../images/img_social/270848539755393.png") no-repeat;   
                 }
                 &:nth-child(3){
-                 
                     background: url("../images/img_social/270848539755393.png") no-repeat;   
                 }
             }
@@ -98,23 +94,22 @@ header{
                 input#search_input{
                     width: 90%;
                     float: left;
-                    padding: 6px;
+                    padding: 6px; // chu y
                     font-size: 12px;
                     color: #929292;
                     border: none;
-                    background: transparent;
-                   box-sizing: border-box;
+                    background: transparent; 
+                   //box-sizing: border-box;
                   // line-height: 10px;
                 }
                 a#tnSearch{
                         width: 10%;
                        display: block;
                         float:right;
-                        padding:5px 0;
-                     
+                        padding:5px 0;    
                         border: 1px solid red;
                         border: 0;
-                        box-sizing: border-box;
+                     //   box-sizing: border-box;
                        // margin-right:0px;
                         img{
                             //  width: 100%;
@@ -127,22 +122,27 @@ header{
         }
     }
 }
-aside{ 
-   
+nav{    
     .menu-top{
-        background: red;
+     //   background: red;
         width: 100%;   
         margin-top: 20px; 
         position: relative; 
-    
+        //margin-bottom: 55px;
+     
+      
             .ddsmoothmenu{
+                float:right;
+                width:65%;
+                margin-top:5px;
+                margin-bottom: 3.1%;
                 ul{
                     @include ul-menu();
                     li{
                         position: relative;
                         display: inline-block; // thay vi dung clear o div ddsmoothmenu
-                        //float: ;
-                        z-index: 10000;
+                      
+                        z-index: 10000; // chu y
                         a{
                             color: #003283;
                             font-weight: 700;
@@ -168,9 +168,10 @@ aside{
         
     }
      #smoothmenu1{
-         float:right;
-         width:65%;
-         margin-top:5px;
+        //  float:right;
+        //  width:65%;
+        //  margin-top:5px;
+        //  margin-bottom: 3.1%;
          
     }
 }
@@ -205,13 +206,13 @@ aside{
     margin: 0;
     position: absolute;
     display: none;
-    width: 800px !important;
+    width: 800px;
    // border: 1px solid #fff;
    // padding-left: 0px;
   background: #003283;
   //   overflow: visible !important; // 
     text-align: center;
-    right: -100px !important; //
+  //  right: -100px !important; //
     
 }
 .ddsmoothmenu ul li ul li{
@@ -256,17 +257,17 @@ aside{
     height: 10px;
     top:0px;
     left: -7px;
-    background: url("../images/hover_icon.png") no-repeat 0px 0px;
+     background: url("../images/hover_icon.png") no-repeat 0px 0px;
 }
 
 .ddsmoothmenu ul li ul li a:hover:after{
     background: none;
-    content: '';
-    width: 7px;
-    height: 10px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    // content: '';
+    // width: 7px;
+    // height: 10px;
+    // position: absolute;
+    // top: 0px;
+    // left: 0px;
 }
 
 
@@ -276,28 +277,29 @@ aside{
     padding-top:1%;
     margin-left: 15%;
    // border: 1px solid red;
-   // display: inline-block;
+//    / display: inline-block;
    position: absolute;
+   margin-bottom: 5%;
+ 
 }
-
-
 .quality_index{
     position: relative;
     margin-top: -92px;
     z-index: 99;
     // width: 100%;
   //  margin-left: -92px;
+    margin-top: -40px;
   .repon-item{width:24.9%;float:left;margin-top:41px;background:#003283;position:relative;margin-right:1px}
 
     
     
     .quality_index1{
-     //   width: 24.9%;
-   //     float: left;
+        //     float: left;
         background: #003283;
         position: relative;
         margin-right: 1px;
         margin-top: 100px;
+        width: 24.9%;
         
         &:first-child:before{
             content: '';
@@ -387,7 +389,7 @@ section{
        float: left;  
        position: relative;
      // border: 1px solid red;
-       margin: 1% 1% 1%  0;   
+        margin: 1% 1% 0 0;   
        overflow: hidden; // quan trong ,phong to hinh trong gioi han,phong to o trong khung
         img{
             width: 100%;
@@ -450,6 +452,7 @@ section{
                     background: #c2c2c2;
                     font-weight: bold;
                     margin-bottom: 15px;
+                
                     padding: 2px;
                      padding-left: 6px;
                     padding-right: 0; // xoa duong doc ben phai
@@ -713,7 +716,8 @@ footer{
         ul{
             width:100% !important;
             position:relative !important;
-           // top:0;left:0;
+            top:0;
+            left:0;
             text-align:center;
            // background: red;
            li{
@@ -725,16 +729,43 @@ footer{
                padding:2px;
                padding-bottom:0;
                padding-top:5px;
-            //   vertical-align:top;
-               margin-bottom:0 !important;
+               //padding-left: 6px;
+               vertical-align:top;
+               margin-bottom:0;
                b{
-                display:block;color:#282828;text-transform:uppercase;padding:5px;border-radius:5px 5px 0 0;background:#fff;text-align:center;min-height:50px;
+                display:block;
+                color:#282828;
+                text-transform:uppercase;
+                padding:5px;
+                border-radius:5px 5px 0 0;
+                background:#fff;
+                text-align:center;
+                min-height:50px;
                }
            }
         }
     }
+    .tab_container{
+        width: 100% !important;
+        float: none !important;
+        //border-radius:5px; 
+        padding: 10px;
+        height: auto !important;
+        margin-top: 20px;
+        #tab1{
+            .news_1{
+                width: 100% !important;
+                float: none !important;
+            }
+            .news_2{
+                 width: 100% !important;
+                 float: none !important;
+               //  height: 400px !important;
+            }
+        }
+    }
 }
-     
+ 
   
  
 }
@@ -777,10 +808,29 @@ footer{
             margin-bottom: 5%;
         }
    }
+   .tabs_main ul li{
+      //  box-sizing: border-box;
+   }
+   .tabs_main ul li b{
+       min-height: 70px !important;
+       font-size: 14px;
+   }
    
 
    
 }
 @media (max-width: 480px){
-
+    .tabs_main ul li{
+     // display: block !important;
+       width: 100% !important;
+       
+      // padding: 2px;
+      // vertical-align: top;
+       //  margin-top: 15px;
+     //  margin-bottom:55px !important;
+       b{
+           min-height: auto !important;
+           border-radius:0; 
+       }
+    }
 }

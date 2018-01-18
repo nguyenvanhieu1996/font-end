@@ -4,8 +4,6 @@ a, a:focus, a:hover { text-decoration: none; }
 
 h3, h2 { margin: 0; padding: 0; }
 
-th { text-align: center; padding: 10px; }
-
 :focus { outline: none !important; }
 
 body, p { margin: 0px; padding: 0px; }
@@ -18,8 +16,7 @@ img { max-width: 100%; }
 
 .container { width: 1200px; margin: 0 auto; padding: 0; position: relative; }
 
-header .banner_item { background: #003283; color: #fff; padding-top: 5px; }
-header .header-top { width: 100%; }
+header .banner_item { background: #003283; color: #fff; padding-top: 5px; width: 100%; }
 header .header-top .container .banner1 { float: left; font-size: 15px; line-height: 2.5; padding-left: 30px; }
 header .header-top .container .banner1:nth-child(1) { background: url("../images/img_social/270848539755393.png") no-repeat; }
 header .header-top .container .banner1:nth-child(2) { background: url("../images/img_social/270848539755393.png") no-repeat; }
@@ -27,19 +24,19 @@ header .header-top .container .banner1:nth-child(3) { background: url("../images
 header .header-top .container .img_social { float: right; }
 header .header-top .container .search-top { float: right; width: 20%; }
 header .header-top .container .search-top form#form-search { border-radius: 30px; background: #fff; border: 0px; height: 30px; }
-header .header-top .container .search-top input#search_input { width: 90%; float: left; padding: 6px; font-size: 12px; color: #929292; border: none; background: transparent; box-sizing: border-box; }
-header .header-top .container .search-top a#tnSearch { width: 10%; display: block; float: right; padding: 5px 0; border: 1px solid red; border: 0; box-sizing: border-box; }
+header .header-top .container .search-top input#search_input { width: 90%; float: left; padding: 6px; font-size: 12px; color: #929292; border: none; background: transparent; }
+header .header-top .container .search-top a#tnSearch { width: 10%; display: block; float: right; padding: 5px 0; border: 1px solid red; border: 0; }
 
-aside .menu-top { background: red; width: 100%; margin-top: 20px; position: relative; }
-aside .menu-top .ddsmoothmenu ul { list-style: none; padding: 0px; margin: 0px; }
-aside .menu-top .ddsmoothmenu ul li { position: relative; display: inline-block; z-index: 10000; }
-aside .menu-top .ddsmoothmenu ul li a { color: #003283; font-weight: 700; display: block; padding: 35px 8px; text-transform: uppercase; font-size: 16px; }
-aside .menu-top .ddsmoothmenu ul li a:hover { color: #fff; background: url("../images/hover_bg.png") repeat-x top center; }
-aside #smoothmenu1 { float: right; width: 65%; margin-top: 5px; }
+nav .menu-top { width: 100%; margin-top: 20px; position: relative; }
+nav .menu-top .ddsmoothmenu { float: right; width: 65%; margin-top: 5px; margin-bottom: 3.1%; }
+nav .menu-top .ddsmoothmenu ul { list-style: none; padding: 0px; margin: 0px; }
+nav .menu-top .ddsmoothmenu ul li { position: relative; display: inline-block; z-index: 10000; }
+nav .menu-top .ddsmoothmenu ul li a { color: #003283; font-weight: 700; display: block; padding: 35px 8px; text-transform: uppercase; font-size: 16px; }
+nav .menu-top .ddsmoothmenu ul li a:hover { color: #fff; background: url("../images/hover_bg.png") repeat-x top center; }
 
 .ddsmoothmenu ul li a:focus { background: url("../images/hover_bg.png") repeat-x top center; color: #fff !important; }
 
-.ddsmoothmenu ul li ul { padding: 0; margin: 0; position: absolute; display: none; width: 800px !important; background: #003283; text-align: center; right: -100px !important; }
+.ddsmoothmenu ul li ul { padding: 0; margin: 0; position: absolute; display: none; width: 800px; background: #003283; text-align: center; }
 
 .ddsmoothmenu ul li ul li { width: 25%; box-sizing: border-box; float: left; }
 .ddsmoothmenu ul li ul li:nth-child(4n) { margin-right: 0px; }
@@ -51,13 +48,13 @@ aside #smoothmenu1 { float: right; width: 65%; margin-top: 5px; }
 
 .ddsmoothmenu ul li a:hover:after { content: ''; position: absolute; width: 7px; height: 10px; top: 0px; left: -7px; background: url("../images/hover_icon.png") no-repeat 0px 0px; }
 
-.ddsmoothmenu ul li ul li a:hover:after { background: none; content: ''; width: 7px; height: 10px; position: absolute; top: 0px; left: 0px; }
+.ddsmoothmenu ul li ul li a:hover:after { background: none; }
 
-.banner_top { float: left; width: 40%; padding-top: 1%; margin-left: 15%; position: absolute; }
+.banner_top { float: left; width: 40%; padding-top: 1%; margin-left: 15%; position: absolute; margin-bottom: 5%; }
 
-.quality_index { position: relative; margin-top: -92px; z-index: 99; }
+.quality_index { position: relative; margin-top: -92px; z-index: 99; margin-top: -40px; }
 .quality_index .repon-item { width: 24.9%; float: left; margin-top: 41px; background: #003283; position: relative; margin-right: 1px; }
-.quality_index .quality_index1 { background: #003283; position: relative; margin-right: 1px; margin-top: 100px; }
+.quality_index .quality_index1 { background: #003283; position: relative; margin-right: 1px; margin-top: 100px; width: 24.9%; }
 .quality_index .quality_index1:first-child:before { content: ''; position: absolute; background: url("../images/index1.png") no-repeat top center; width: 100%; height: 92px; top: -46px; }
 .quality_index .quality_index1:nth-child(2):before { background: url("../images/index2.png") no-repeat top center; width: 100%; height: 92px; position: absolute; top: -46px; content: ''; }
 .quality_index .quality_index1:nth-child(3):before { content: ''; position: absolute; background: url("../images/index3.png") no-repeat center; width: 100%; height: 92px; top: -46px; }
@@ -69,7 +66,7 @@ section .title-index { margin: 10px; position: relative; }
 section .title-index h3 { text-transform: uppercase; font-size: 30px; text-align: center; font-weight: 700; padding: 10px 0; color: #003283; }
 section .title-index h3:before { content: ''; position: absolute; background: url("../images/line_title_l.png") no-repeat center; width: 313px; height: 33px; left: 120px; }
 section .title-index h3:after { content: ''; position: absolute; background: url("../images/line_title_r.png") no-repeat center; width: 313px; height: 33px; right: 120px; }
-section .product-index { width: 23.5%; float: left; position: relative; margin: 1% 1% 1%  0; overflow: hidden; }
+section .product-index { width: 23.5%; float: left; position: relative; margin: 1% 1% 0 0; overflow: hidden; }
 section .product-index img { width: 100%; transform: scale(1); transition: all 1s ease-out 0; }
 section .product-index b { position: absolute; display: block; bottom: 0px; left: 0px; right: 0px; text-align: center; background: rgba(0, 0, 0, 0.6); color: #fff; padding: 10px; }
 section .product-index a:hover img { transform: scale(1.05); transition: all 1s ease-out 0; }
@@ -129,15 +126,21 @@ footer .footer-right { width: 33%; float: left; }
   header .header-top .container .img_social { float: right; width: 100%; text-align: center; }
   header .header-top .container .search-top { width: 60%; float: none; margin: 0 auto; padding: 1% 0; } }
 @media (max-width: 767px) { section .product-index { width: 100%; float: none; margin: 1% 0; }
-  .tabs .tabs_main ul { width: 100% !important; position: relative !important; text-align: center; }
-  .tabs .tabs_main ul li { border-radius: 5px 5px 0 0; cursor: pointer; display: inline-block; width: 19%; padding: 2px; padding-bottom: 0; padding-top: 5px; margin-bottom: 0 !important; }
-  .tabs .tabs_main ul li b { display: block; color: #282828; text-transform: uppercase; padding: 5px; border-radius: 5px 5px 0 0; background: #fff; text-align: center; min-height: 50px; } }
+  .tabs .tabs_main ul { width: 100% !important; position: relative !important; top: 0; left: 0; text-align: center; }
+  .tabs .tabs_main ul li { border-radius: 5px 5px 0 0; cursor: pointer; display: inline-block; width: 19%; padding: 2px; padding-bottom: 0; padding-top: 5px; vertical-align: top; margin-bottom: 0; }
+  .tabs .tabs_main ul li b { display: block; color: #282828; text-transform: uppercase; padding: 5px; border-radius: 5px 5px 0 0; background: #fff; text-align: center; min-height: 50px; }
+  .tabs .tab_container { width: 100% !important; float: none !important; padding: 10px; height: auto !important; margin-top: 20px; }
+  .tabs .tab_container #tab1 .news_1 { width: 100% !important; float: none !important; }
+  .tabs .tab_container #tab1 .news_2 { width: 100% !important; float: none !important; } }
 @media (max-width: 555px) { section .product-index { width: 100%; float: none; margin-bottom: 2%; }
   .quality_index .repon-item { width: 100%; margin-bottom: 2%; }
   .quality_index .repon-item strong { padding: 15px 0; }
   .quality_index .repon-item span { padding: 10px; }
   footer .footer-left { float: none; width: 100%; margin-bottom: 5%; }
   footer .footer-center { float: none; width: 100%; margin-bottom: 5%; }
-  footer .footer-right { float: none; width: 100%; margin-bottom: 5%; } }
+  footer .footer-right { float: none; width: 100%; margin-bottom: 5%; }
+  .tabs_main ul li b { min-height: 70px !important; font-size: 14px; } }
+@media (max-width: 480px) { .tabs_main ul li { width: 100% !important; }
+  .tabs_main ul li b { min-height: auto !important; border-radius: 0; } }
 
 /*# sourceMappingURL=style.css.map */
